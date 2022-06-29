@@ -54,19 +54,15 @@ This will help customers audit the inbound NSG rules on Subnet where inbound por
 
 You can repeat the same steps as above to create and assign a new defination using the scripts in Policy rule [Audit and block Internet allowed rules on NSGs on Subnet level](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Audit%20and%20block%20Internet%20allowed%20rules%20on%20NSGs%20on%20Subnet%20level)
 
-## Azure services and related products
+## Error screenshot while creating a subnet without NSG 
 
 
-## Deployment steps
-
-
-
-## Related references
+![alt image](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Screenshot%202022-06-29%20164624.png)
 
 
 ## License & Contribute
 
 You are responsible for the performance, the necessary testing, and if needed any regulatory clearance for any of the models produced by this toolbox.
-Please refer [LICENSE](LICENSE) &  [Contribute](https://github.com/Ganapathivarma07/LRS-Migration-AzureSQLMI/blob/master/Contribute.md) for more details
+Please refer [LICENSE](LICENSE) &  [Contribute](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Contribute.md) for more details
 
 
