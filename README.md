@@ -52,7 +52,7 @@ Once done you will be able to see the assignment mentioned below screen
 ## Deployment Steps for the Audit NSG Rules 
 This will help customers audit the inbound NSG rules on Subnet where inbound port is allowed publicly (*, internet) for any ports excluding 80 and 443
 
-You can repeat the same steps as above to create and assign a new defination using the scripts in Policy rule [Audit and block Internet allowed rules on NSGs on Subnet level](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Audit%20and%20block%20Internet%20allowed%20rules%20on%20NSGs%20on%20Subnet%20level)
+You can repeat the same steps as above to create and assign a new defination using the scripts in Policy rule [Script for Audit and block Internet allowed rules on NSGs on Subnet level](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Audit%20and%20block%20Internet%20allowed%20rules%20on%20NSGs%20on%20Subnet%20level)
 
 ## Error screenshot while creating a subnet without NSG 
 
