@@ -1,6 +1,3 @@
-# Title: 
-
-
 
 # Azure Custom Policy for the NSG Compliance  
 
