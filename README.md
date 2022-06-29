@@ -26,7 +26,7 @@ Go to the definations and click +Policy defination
 
 ![alt image](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Screenshot%202022-06-29%20161440.png)
 
-[Script for Audit and Deny Subnet without NSG](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/edit/master/Script%20for%20Audit%20and%20Deny%20Subnet%20without%20NSG) can be modified to match your current infrastructure needs.
+[Script for Audit and Deny Subnet without NSG](https://raw.githubusercontent.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/master/template.json) can be modified to match your current infrastructure needs.
 
 ## One Click Deploying Template
 <!-- Powershell command for Translating Git URL for template.json
