@@ -2,17 +2,19 @@
 
 
 
-# Solution overview and deployed resources. 
+# Azure Custom Policy for the NSG Compliance  
 
 
 
 ## Target audience
 
+.Deployment Engineers 
+. Solution Architects
 
 
-# Architecture
+# Deployment Steps
 
-
+login to Azure portal & search for the Azure Policy
 
 ![alt image]()
 
