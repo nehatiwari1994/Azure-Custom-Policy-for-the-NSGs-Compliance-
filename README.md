@@ -16,7 +16,7 @@
 
 login to Azure portal & search for the Azure Policy
 
-![alt image]()
+![Screenshot 2022-06-29 160542.png]()
 
 
 
