@@ -4,6 +4,7 @@
 
 # Azure Custom Policy for the NSG Compliance  
 
+This Custom Azure Policy will help customers to Audit the Subnets which are non-attached with any NSG. Other Policy in the same Template will help customers to audit the NSG rules where inbound port is allowed publicly (*, internet) for any ports excluding 80 and 443. Both of these policies will also prevent from making non-compliant changes to existing resources. It will also block any noncompliant configuration for the new subnets or NSG rules.  
 
 
 ## Target audience
@@ -13,7 +14,7 @@ Deployment Engineers
 Solution Architects
 
 
-# Deployment Steps
+# Deployment Steps for the Audit Subnet without NSG 
 
 login to Azure portal & search for the Azure Policy
 You will find it like mentioned below.
@@ -21,24 +22,31 @@ You will find it like mentioned below.
 
 ![alt image](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Screenshot%202022-06-29%20160542.png)
 
-Go to the definations and click +Policy defination 
+Go to the definations and click +Policy defination.Fill the requested parameters and paste the script from [Script for Audit and Deny Subnet without NSG](https://raw.githubusercontent.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/master/Script%20for%20Audit%20and%20Deny%20Subnet%20without%20NSG) to the policy rule.
 
 
-![alt image](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Screenshot%202022-06-29%20161440.png)
+![alt image](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Screenshot%202022-06-29%20162349.png)
 
-[Script for Audit and Deny Subnet without NSG](https://raw.githubusercontent.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/master/template.json) can be modified to match your current infrastructure needs.
+Click Save.
 
-## One Click Deploying Template
-<!-- Powershell command for Translating Git URL for template.json
-    $url = "https://raw.githubusercontent.com/Ganapathivarma07/LRS-Migration-AzureSQLMI/master/template.json"
-    [uri]::EscapeDataString($url)
-    >> uri = https%3A%2F%2Fgithub.com%2FGanapathivarma07%2FLRS-Migration-AzureSQLMI%2Fblob%2F
-master%2Ftemplate.json
+You should see the below screen.
 
-Base URL: https://portal.azure.com/#create/Microsoft.Template/uri
-Final URL: <Base URL>/<uri>
--->
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FGanapathivarma07%2FLRS-Migration-AzureSQLMI%2Fmaster%2Ftemplate.json)
+![alt image](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Screenshot%202022-06-29%20162653.png)
+
+## Assign the Policy to the scope
+
+Click the Assign on the top
+
+You will get below screen
+![alt image](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Screenshot%202022-06-29%20163049.png)
+
+Fill all the required information like scope, exclusions and give it a assignement name. Click review and create.
+
+![alt image](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Screenshot%202022-06-29%20163357.png)
+
+Once done you will be able to see the assignment mentioned below screen
+
+![alt image](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Screenshot%202022-06-29%20163544.png)
 
 
 ## Deploying an ARM Template using the Azure portal
