@@ -16,7 +16,7 @@
 
 login to Azure portal & search for the Azure Policy
 
-![Screenshot 2022-06-29 160542.png]()
+![alt image](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Screenshot%202022-06-29%20160542.png)
 
 
 
