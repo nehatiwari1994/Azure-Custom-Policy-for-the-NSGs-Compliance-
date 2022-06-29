@@ -1,0 +1,65 @@
+{
+  "properties": {
+    "displayName": "Audit Subnets that have Internet Allow rules excluding",
+    "policyType": "Custom",
+    "mode": "All",
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Enable or disable the execution of the policy"
+        },
+        "allowedValues": [
+          "Audit",
+          "Disabled",
+          "Deny"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.Network/networkSecurityGroups/securityRules"
+          },
+          {
+            "allOf": [
+              {
+                "field": "Microsoft.Network/networkSecurityGroups/securityRules/access",
+                "equals": "Allow"
+              },
+              {
+                "field": "Microsoft.Network/networkSecurityGroups/securityRules/direction",
+                "equals": "Inbound"
+              },
+              {
+                "field": "Microsoft.Network/networkSecurityGroups/securityRules/destinationPortRange",
+                "notIn": [
+                  "80",
+                  "443"
+                ]
+              },
+              {
+                "anyOf": [
+                  {
+                    "field": "Microsoft.Network/networkSecurityGroups/securityRules/sourceAddressPrefix",
+                    "in": [
+                      "*",
+                      "Internet"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  }
+}
