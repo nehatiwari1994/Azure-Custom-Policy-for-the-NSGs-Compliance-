@@ -8,19 +8,25 @@
 
 ## Target audience
 
-.Deployment Engineers 
-. Solution Architects
+Deployment Engineers 
+
+Solution Architects
 
 
 # Deployment Steps
 
 login to Azure portal & search for the Azure Policy
+You will find it like mentioned below.
+
 
 ![alt image](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Screenshot%202022-06-29%20160542.png)
 
+Go to the definations and click +Policy defination 
 
 
-[Template.json](https://github.com/Ganapathivarma07/LRS-Migration-AzureSQLMI/blob/master/template.json) can be modified to match your current infrastructure needs.
+![alt image](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Screenshot%202022-06-29%20161440.png)
+
+[Script for Audit and Deny Subnet without NSG](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/edit/master/Script%20for%20Audit%20and%20Deny%20Subnet%20without%20NSG) can be modified to match your current infrastructure needs.
 
 ## One Click Deploying Template
 <!-- Powershell command for Translating Git URL for template.json
