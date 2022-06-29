@@ -4,7 +4,7 @@
 
 # Azure Custom Policy for the NSG Compliance  
 
-This Custom Azure Policy will help customers to Audit the Subnets which are non-attached with any NSG. Other Policy in the same Template will help customers to audit the NSG rules where inbound port is allowed publicly (*, internet) for any ports excluding 80 and 443. Both of these policies will also prevent from making non-compliant changes to existing resources. It will also block any noncompliant configuration for the new subnets or NSG rules.  
+This Custom Azure Policy will help customers to Audit the Subnets which are non-attached with any NSG. Other Policy in the Template will help customers to audit the NSG rules where inbound port is allowed publicly (*, internet) for any ports excluding 80 and 443. Both of these policies will also prevent from making non-compliant changes to existing resources. It will also block any noncompliant configuration for the new subnets or NSG rules.  
 
 
 ## Target audience
@@ -49,8 +49,10 @@ Once done you will be able to see the assignment mentioned below screen
 ![alt image](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Screenshot%202022-06-29%20163544.png)
 
 
-## Deploying an ARM Template using the Azure portal
+## Deployment Steps for the Audit NSG Rules 
+This will help customers audit the inbound NSG rules on Subnet where inbound port is allowed publicly (*, internet) for any ports excluding 80 and 443
 
+You can repeat the same steps as above to create and assign a new defination using the scripts in Policy rule [Audit and block Internet allowed rules on NSGs on Subnet level](https://github.com/nehatiwari1994/Azure-Custom-Policy-for-the-NSGs-Compliance-/blob/master/Audit%20and%20block%20Internet%20allowed%20rules%20on%20NSGs%20on%20Subnet%20level)
 
 ## Azure services and related products
 
